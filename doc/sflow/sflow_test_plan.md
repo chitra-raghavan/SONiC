@@ -7,7 +7,7 @@ The test is targeting a running SONIC system with fully functioning configuratio
 ### Setup Configuration
 The test will run on the t0 testbed:
 
-![](../raw/gh-pages/images/sflow/testbed-t0.png)
+![testbed-t0.png](../../images/sflow/testbed-t0.png)
 
 * Ethernet0, Ethernet4, Ethernet8, and Ethernet12 of dut are used for traffic.
 * sFlow collectors are configured to be reachable from Ethernet16 and Ethernet20.
