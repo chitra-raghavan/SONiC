@@ -1,19 +1,10 @@
 # sFlow Test Plan
----
-
 ## Overview
----
 The purpose is to test the functionality of the sFlow monitoring system on the SONIC switch DUT . The test assumes that the host bridge has been preconfigured according to the t0 topology.
-
 ### Scope
----
 The test is targeting a running SONIC system with fully functioning configuration. Rather, it is testing the functionality of sFlow on the SONIC system by verifying that sFlow is monitoring traffic flow data correctly.
-
 ## Test Structure
----
-
 ### Setup Configuration
----
 The test will run on the t0 testbed:
 
 ![](../raw/gh-pages/images/sflow/testbed-t0.png)
@@ -23,8 +14,6 @@ The test will run on the t0 testbed:
 * Collection is implemented using the sflowtool. Counter sampling output and flow sampling output are directed to a text file. The test script parses the text file and validates the data according to the polling/sampling rate configured and the interfaces enabled.
 
 ### Test Cases
----
-
 #### Test Case #1
 ##### Test objective
 Verify that the SFLOW_COLLECTOR configuration additions and configuration deletions are processed by hsflowd.
