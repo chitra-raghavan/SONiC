@@ -77,4 +77,5 @@ Verify that with config saved in the config_db.json, restarting the unit should 
 | 1. |1. Enable 4 interfaces, "config sflow interface enable <_interface name_>".<br> 2. Enable sFlow globally, "config sflow enable".<br> 3. Save the configuration and then reboot. | The configurations should be reflected in “show sflow” and "show sflow interfaces". |
 | 2. | 1. Disable sFlow globally, "config sflow disable". Save the configuration and then reboot. | The configurations should be reflected in “show sflow” and "show sflow interfaces". |
 | 3. | 1. Enable sFlow, "config sflow enable".<br> 2. Add two collectors, "config sflow collector add <_collector name_> <_ip_>".<br> 3. Configure the counter polling interval, "config sflow polling-interval <_time interval_>".<br> 4. Configure the interfaces, "config sflow interface enable <_interface name_>".<br> 5. Save the configuration and then reboot. | The configurations should be reflected in “show sflow” "show sflow interfaces". |
-
+#### Testcase #7
+Send difefrent packet length and make sure all packets are captured
